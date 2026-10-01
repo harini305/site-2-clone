@@ -1,0 +1,35 @@
+.wrap {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  padding-block: 110px 130px;
+  text-align: center;
+}
+
+.code {
+  font-size: clamp(90px, 18vw, 180px);
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(150deg, var(--red), #fb7645);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.title {
+  font-size: clamp(26px, 4vw, 40px);
+  font-weight: 600;
+}
+
+.text {
+  max-width: 560px;
+  color: #6b6b6b;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 10px;
+}

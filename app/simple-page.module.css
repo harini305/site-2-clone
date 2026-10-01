@@ -1,0 +1,23 @@
+.page {
+  min-height: 420px;
+}
+
+.narrow {
+  max-width: 1290px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #3d3d3d;
+}
+
+.body {
+  margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .body {
+    margin-top: 28px;
+  }
+}

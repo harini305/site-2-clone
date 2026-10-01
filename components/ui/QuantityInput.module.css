@@ -1,0 +1,52 @@
+.qty {
+  display: inline-flex;
+  align-items: center;
+  height: 46px;
+  border-radius: 8px;
+  background: #ededed;
+}
+
+.qty button {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 100%;
+  font-size: 16px;
+  color: var(--ink);
+  border-radius: 8px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.qty button:hover:not(:disabled) {
+  color: var(--red);
+  background: #e2e2e2;
+}
+
+.qty button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.qty input {
+  width: 92px;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  text-align: center;
+  font-size: 17px;
+  color: var(--orange);
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.qty input::-webkit-outer-spin-button,
+.qty input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.qty input:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--red);
+  border-radius: 4px;
+}

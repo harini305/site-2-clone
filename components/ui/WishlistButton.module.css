@@ -1,0 +1,50 @@
+.btn {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--red);
+  font-size: 24px;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.btn:hover {
+  transform: scale(1.12);
+  background: rgba(249, 37, 59, 0.08);
+}
+
+.active svg {
+  animation: pop 0.35s ease;
+}
+
+.labelled {
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  gap: 14px;
+  border-radius: 8px;
+  padding: 6px 4px;
+  font-size: 30px;
+}
+
+.labelled span {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.labelled:hover {
+  transform: none;
+  background: transparent;
+}
+
+.labelled:hover span {
+  color: var(--red);
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.3);
+  }
+}

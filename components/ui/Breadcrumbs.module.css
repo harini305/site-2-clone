@@ -1,0 +1,33 @@
+.trail {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 0;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.item a {
+  transition: color 0.2s;
+}
+
+.item a:hover {
+  color: var(--red);
+}
+
+.sep {
+  margin: 0 8px;
+  font-size: 0.7em;
+}
+
+@media (max-width: 767px) {
+  .trail {
+    font-size: 20px;
+  }
+}

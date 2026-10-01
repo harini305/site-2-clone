@@ -1,0 +1,200 @@
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--surface);
+  transition: box-shadow 0.3s ease;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: var(--header-h);
+  transition: height 0.3s ease;
+}
+
+.scrolled {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.scrolled .inner {
+  height: 92px;
+}
+
+.search {
+  flex: 0 1 492px;
+  min-width: 0;
+}
+
+.utility {
+  margin-left: auto;
+}
+
+.utility ul {
+  display: flex;
+  gap: 38px;
+}
+
+.utility a {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  transition: color 0.2s;
+}
+
+.utility a:hover,
+.utility .current {
+  color: var(--red);
+}
+
+.utility .current {
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.signin {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 53px;
+  padding: 0 23px 0 20px;
+  border-radius: 6px;
+  background: var(--red);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.25s, box-shadow 0.25s;
+}
+
+.signin svg {
+  font-size: 22px;
+}
+
+.signin:hover {
+  background: var(--red-dark);
+  box-shadow: 0 10px 22px rgba(249, 37, 59, 0.3);
+}
+
+.icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  color: #3d3d3d;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.icon:hover {
+  color: var(--red);
+  transform: translateY(-1px);
+}
+
+.dot {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--red);
+}
+
+.burger {
+  display: none;
+  font-size: 30px;
+  color: #3d3d3d;
+}
+
+@media (max-width: 1280px) {
+  .inner {
+    gap: 24px;
+  }
+
+  .utility ul {
+    gap: 22px;
+  }
+
+  .signinText {
+    display: none;
+  }
+
+  .signin {
+    width: 50px;
+    padding: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .utility {
+    display: none;
+  }
+
+  .actions {
+    margin-left: auto;
+  }
+
+  .burger {
+    display: grid;
+  }
+
+  .search {
+    flex-basis: 420px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bar {
+    position: relative;
+  }
+
+  .inner {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 18px 12px;
+    padding-block: 26px 20px;
+  }
+
+  .scrolled .inner {
+    height: auto;
+  }
+
+  .search {
+    order: 3;
+    flex: 1 1 100%;
+  }
+
+  .actions {
+    gap: 12px;
+  }
+
+  .signin {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+  }
+
+  .signin svg {
+    font-size: 20px;
+  }
+
+  .icon {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .actions {
+    gap: 8px;
+  }
+
+  .burger {
+    font-size: 26px;
+  }
+}

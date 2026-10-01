@@ -1,0 +1,134 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 440px;
+  gap: 60px;
+  align-items: start;
+}
+
+.heading {
+  margin-bottom: 26px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 20px;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.summary {
+  display: grid;
+  gap: 20px;
+  padding: 32px;
+  border-radius: 15px;
+  background: var(--surface);
+}
+
+.summary .heading {
+  margin-bottom: 0;
+}
+
+.lines li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #dcdcdc;
+  font-size: 15px;
+}
+
+.totals {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.totals th,
+.totals td {
+  padding: 12px 0;
+  border-bottom: 1px solid #dcdcdc;
+  text-align: left;
+  vertical-align: top;
+}
+
+.totals th {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.totals td {
+  text-align: right;
+}
+
+.totals small {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.totals strong {
+  font-size: 20px;
+  color: var(--red);
+}
+
+.payment {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.payment label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.payment input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--red);
+}
+
+.place {
+  width: 100%;
+}
+
+.done {
+  display: grid;
+  justify-items: start;
+  gap: 18px;
+  max-width: 720px;
+}
+
+.done > svg {
+  font-size: 64px;
+  color: #16a34a;
+}
+
+.done h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary {
+    padding: 24px 20px;
+  }
+}

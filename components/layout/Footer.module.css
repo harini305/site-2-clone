@@ -1,0 +1,204 @@
+.subscribe {
+  position: relative;
+  overflow: hidden;
+  padding: 175px 0 135px;
+  background:
+    linear-gradient(172deg, transparent 0 58%, rgba(255, 255, 255, 0.05) 58% 100%),
+    linear-gradient(176deg, transparent 0 72%, rgba(255, 255, 255, 0.05) 72% 100%),
+    linear-gradient(186deg, rgba(255, 255, 255, 0.03) 0 22%, transparent 22% 100%),
+    linear-gradient(180deg, #353d48 0%, #4a5767 100%);
+  color: #fff;
+}
+
+.subscribeInner {
+  display: grid;
+  justify-items: center;
+  gap: 42px;
+}
+
+.subscribeTitle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 6px 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.subscribeTitle span {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.subscribeTitle small {
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.input {
+  flex: 1 1 280px;
+  min-width: 0;
+  height: 51px;
+  border: 0;
+  border-radius: 7px;
+  padding: 0 17px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.input::placeholder {
+  color: #3d3d3d;
+}
+
+.input:focus {
+  outline: 3px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+.submit {
+  flex: 0 0 126px;
+  height: 51px;
+  border-radius: 7px;
+  background: var(--red);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.submit:hover {
+  background: var(--red-dark);
+  transform: translateY(-2px);
+}
+
+.error {
+  flex: 1 1 100%;
+  color: #ffd1d6;
+  font-size: 14px;
+}
+
+.bottom {
+  background: #e8e8e8;
+}
+
+.bottomInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px 40px;
+  flex-wrap: wrap;
+  padding-block: 32px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 32px 46px;
+  flex-wrap: wrap;
+}
+
+.payments {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  font-size: 42px;
+}
+
+.meta {
+  display: grid;
+  justify-items: end;
+  gap: 10px;
+  text-align: right;
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+  padding-right: 18px;
+}
+
+.socials a {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: var(--red);
+  font-size: 16px;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.socials a:hover {
+  background: var(--red);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.copy {
+  max-width: 540px;
+  font-size: 16px;
+  color: #444;
+}
+
+@media (max-width: 1024px) {
+  .subscribe {
+    padding: 110px 0 100px;
+  }
+
+  .bottomInner {
+    justify-content: center;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .meta {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .socials {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribe {
+    padding: 80px 0 72px;
+  }
+
+  .subscribeTitle span {
+    font-size: 30px;
+  }
+
+  .subscribeTitle small {
+    font-size: 17px;
+  }
+
+  .submit {
+    flex: 1 1 100%;
+  }
+
+  .payments {
+    gap: 18px;
+    font-size: 36px;
+  }
+
+  .copy {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,50 @@
+.wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 51px;
+  padding-left: 24px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #29323c, #485563);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(41, 50, 60, 0.18);
+}
+
+.label {
+  font-size: 14px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.select {
+  height: 100%;
+  border: 0;
+  padding: 0 46px 0 6px;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  appearance: none;
+  cursor: pointer;
+}
+
+.select option {
+  color: var(--ink);
+  text-transform: none;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.wrap:focus-within {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.caret {
+  position: absolute;
+  right: 22px;
+  pointer-events: none;
+}

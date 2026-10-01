@@ -1,0 +1,224 @@
+.empty {
+  display: grid;
+  justify-items: start;
+  gap: 18px;
+  padding: 10px 0 40px;
+  font-size: 17px;
+}
+
+.empty > svg {
+  font-size: 56px;
+  color: #c7c7c7;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 400px;
+  gap: 50px;
+  align-items: start;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+.table th {
+  padding: 22px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  border-bottom: 1px solid var(--line);
+}
+
+.table td {
+  padding: 18px 16px;
+  border-bottom: 1px solid var(--line-soft);
+  vertical-align: middle;
+}
+
+.table tr:last-child td {
+  border-bottom: 0;
+}
+
+.removeCell {
+  width: 56px;
+}
+
+.remove {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  transition: all 0.2s;
+}
+
+.remove:hover {
+  border-color: var(--red);
+  background: var(--red);
+  color: #fff;
+}
+
+.thumbCell {
+  width: 96px;
+}
+
+.thumbCell img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.nameCell a {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.nameCell a:hover {
+  color: var(--red);
+}
+
+.lineTotal {
+  font-weight: 600;
+  color: var(--red);
+}
+
+.coupon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+  max-width: 520px;
+}
+
+.coupon input {
+  flex: 1 1 220px;
+  padding-block: 14px;
+}
+
+.totals {
+  padding: 30px;
+  border-radius: 15px;
+  background: var(--surface);
+}
+
+.totals h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.totalsTable {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.totalsTable th,
+.totalsTable td {
+  padding: 14px 0;
+  border-bottom: 1px solid #dcdcdc;
+  text-align: left;
+  vertical-align: top;
+}
+
+.totalsTable th {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.totalsTable td {
+  text-align: right;
+}
+
+.totalsTable small {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.totalsTable strong {
+  font-size: 20px;
+  color: var(--red);
+}
+
+.checkoutBtn {
+  width: 100%;
+  margin-top: 24px;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .table thead {
+    display: none;
+  }
+
+  .table,
+  .table tbody,
+  .table tr {
+    display: block;
+  }
+
+  .table tr {
+    position: relative;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 6px 14px;
+    padding: 18px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  .table td {
+    display: block;
+    padding: 0;
+    border: 0;
+  }
+
+  .removeCell {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: auto;
+  }
+
+  .thumbCell {
+    grid-row: span 4;
+    width: auto;
+  }
+
+  .nameCell {
+    padding-right: 40px !important;
+  }
+
+  .table td[data-label] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .table td[data-label]::before {
+    content: attr(data-label);
+    font-weight: 500;
+    color: var(--muted);
+  }
+
+  .totals {
+    padding: 24px 20px;
+  }
+}

@@ -1,0 +1,77 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.mark {
+  display: grid;
+  place-items: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: var(--red);
+  color: #fff;
+  font-size: 38px;
+  box-shadow: 0 8px 18px rgba(249, 37, 59, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .mark {
+  transform: rotate(-8deg) scale(1.04);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.name {
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.tagline {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+
+.lg .mark {
+  width: 70px;
+  height: 70px;
+  font-size: 42px;
+}
+
+.lg .name {
+  font-size: 29px;
+}
+
+.lg .tagline {
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .mark {
+    width: 44px;
+    height: 44px;
+    font-size: 26px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .tagline {
+    font-size: 9px;
+    margin-top: 4px;
+  }
+}

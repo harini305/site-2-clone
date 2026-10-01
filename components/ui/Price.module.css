@@ -1,0 +1,40 @@
+.price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  font-weight: 500;
+}
+
+.current {
+  text-decoration: none;
+  color: var(--red);
+}
+
+.old {
+  color: #9a9a9a;
+  font-weight: 400;
+}
+
+.md {
+  font-size: 18px;
+}
+
+.md .old {
+  font-size: 16px;
+}
+
+.lg {
+  justify-content: flex-start;
+  font-size: 34px;
+  gap: 4px 34px;
+}
+
+.lg .current {
+  font-weight: 600;
+}
+
+.lg .old {
+  font-size: 22px;
+}

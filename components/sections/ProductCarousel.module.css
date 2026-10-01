@@ -1,0 +1,71 @@
+.section {
+  padding-bottom: 30px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 18px;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.arrow:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+}
+
+.viewAll {
+  margin-left: 8px;
+  padding: 13px 35px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.track {
+  margin-top: 73px;
+}
+
+.swiper {
+  padding: 10px 2px 56px;
+  margin: -10px -2px 0;
+}
+
+.slide {
+  height: auto;
+}
+
+.swiper :global(.swiper-pagination-bullet) {
+  width: 10px;
+  height: 10px;
+  background: #c7c7c7;
+  opacity: 1;
+  transition: width 0.3s, background 0.3s;
+}
+
+.swiper :global(.swiper-pagination-bullet-active) {
+  width: 28px;
+  border-radius: 6px;
+  background: var(--red);
+}
+
+@media (max-width: 767px) {
+  .track {
+    margin-top: 36px;
+  }
+
+  .arrow {
+    display: none;
+  }
+}

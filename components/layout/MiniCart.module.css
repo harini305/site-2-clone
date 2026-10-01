@@ -1,0 +1,143 @@
+.wrap {
+  position: relative;
+}
+
+.toggle {
+  position: relative;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  color: #3d3d3d;
+  transition: color 0.2s;
+}
+
+.toggle:hover {
+  color: var(--red);
+}
+
+.count {
+  position: absolute;
+  top: -10px;
+  right: -9px;
+  min-width: 19px;
+  height: 19px;
+  padding: 0 5px;
+  border-radius: 50px;
+  background: var(--red);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+}
+
+.panel {
+  position: absolute;
+  top: calc(100% + 22px);
+  right: -10px;
+  z-index: 70;
+  width: 340px;
+  max-width: calc(100vw - 32px);
+  padding: 22px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+.open {
+  animation: drop 0.22s ease;
+}
+
+.empty {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  padding: 12px 0 4px;
+  text-align: center;
+}
+
+.empty > svg {
+  font-size: 48px;
+  color: #c7c7c7;
+}
+
+.heading {
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.list {
+  max-height: 290px;
+  overflow-y: auto;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: 56px 1fr 28px;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.name:hover {
+  color: var(--red);
+}
+
+.meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.remove {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: var(--muted);
+}
+
+.remove:hover {
+  background: #fff1f2;
+  color: var(--red);
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  color: var(--ink);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@keyframes drop {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+@media (max-width: 767px) {
+  .toggle {
+    font-size: 25px;
+  }
+
+  .panel {
+    position: fixed;
+    top: 90px;
+    right: 16px;
+  }
+}

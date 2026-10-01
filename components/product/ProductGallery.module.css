@@ -1,0 +1,153 @@
+.main {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 615 / 518;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.mainImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: fade 0.4s ease;
+}
+
+.zoomBtn {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 28px;
+  color: #3d3d3d;
+  transition: background 0.2s, color 0.2s;
+}
+
+.zoomBtn:hover {
+  background: var(--surface);
+  color: var(--red);
+}
+
+.thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.thumbs button {
+  display: grid;
+  place-items: center;
+  width: 131px;
+  height: 135px;
+  padding: 12px;
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  transition: border-color 0.2s;
+}
+
+.thumbs button:hover {
+  border-color: var(--line);
+}
+
+.thumbs img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.activeThumb {
+  border-color: var(--red) !important;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 400;
+  display: grid;
+  place-items: center;
+  padding: 60px 20px;
+  animation: fade 0.25s ease;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 20, 26, 0.9);
+}
+
+.lightImg {
+  position: relative;
+  width: min(80vw, 760px);
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  padding: 30px;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.close,
+.nav {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 24px;
+  transition: background 0.2s;
+}
+
+.close:hover,
+.nav:hover {
+  background: var(--red);
+}
+
+.close {
+  top: 20px;
+  right: 20px;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .thumbs button {
+    width: 90px;
+    height: 92px;
+  }
+
+  .nav {
+    top: auto;
+    bottom: 20px;
+  }
+
+  .prev {
+    left: calc(50% - 58px);
+  }
+
+  .next {
+    right: calc(50% - 58px);
+  }
+}

@@ -1,0 +1,160 @@
+.wrap {
+  max-width: 1200px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  padding: 22px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+  color: #8a8a8a;
+}
+
+.table td {
+  padding: 18px;
+  border-top: 1px solid var(--line-soft);
+  vertical-align: middle;
+}
+
+.emptyCell {
+  text-align: center;
+}
+
+.emptyCell > svg {
+  margin: 10px auto;
+  font-size: 44px;
+  color: #c7c7c7;
+}
+
+.emptyCell p {
+  margin-bottom: 16px;
+}
+
+.removeCell {
+  width: 56px;
+}
+
+.remove {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--muted);
+}
+
+.remove:hover {
+  background: var(--red);
+  border-color: var(--red);
+  color: #fff;
+}
+
+.thumbCell {
+  width: 96px;
+}
+
+.thumbCell img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.nameCell a {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.nameCell a:hover {
+  color: var(--red);
+}
+
+.price {
+  justify-content: flex-start;
+  font-size: 16px;
+}
+
+.in {
+  color: #16a34a;
+}
+
+.out {
+  color: var(--red);
+}
+
+.actionCell {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .table thead {
+    display: none;
+  }
+
+  .table,
+  .table tbody,
+  .table tr {
+    display: block;
+  }
+
+  .table tr {
+    position: relative;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 6px 14px;
+    padding: 18px;
+    border-top: 1px solid var(--line-soft);
+  }
+
+  .table tr:first-child {
+    border-top: 0;
+  }
+
+  .table td {
+    display: block;
+    padding: 0;
+    border: 0;
+  }
+
+  .emptyCell {
+    grid-column: 1 / -1;
+  }
+
+  .removeCell {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: auto;
+  }
+
+  .thumbCell {
+    grid-row: span 4;
+    width: auto;
+  }
+
+  .table td[data-label] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .table td[data-label]::before {
+    content: attr(data-label);
+    color: var(--muted);
+  }
+
+  .actionCell {
+    text-align: left;
+  }
+}
