@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none"><defs><linearGradient id="m1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3a2414"/><stop offset="1" stop-color="#120a05"/></linearGradient></defs><ellipse cx="200" cy="372" rx="110" ry="12" fill="#000" opacity=".08"/>
+    <rect x="120" y="50" width="160" height="50" rx="10" fill="#f2c200"/>
+    <path d="M110 110c0-8 6-12 14-12h152c8 0 14 4 14 12v20c30 30 30 180 0 220-6 10-14 14-24 14H134c-10 0-18-4-24-14-30-40-30-190 0-220z" fill="url(#m1)"/>
+    <ellipse cx="200" cy="232" rx="82" ry="62" fill="#f2c200"/><ellipse cx="200" cy="232" rx="72" ry="52" fill="#c4161c"/>
+    <text x="200" y="240" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="28" fill="#f2c200">YEAST</text>
+    <text x="200" y="262" text-anchor="middle" font-family="Arial" font-size="13" fill="#fff">extract spread</text>
+    <path d="M128 150c-10 40-8 120 4 170" stroke="#fff" stroke-width="10" opacity=".2" stroke-linecap="round"/></svg>

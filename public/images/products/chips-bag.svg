@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none"><defs><linearGradient id="p1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb21a"/><stop offset="0.6" stop-color="#ff7a00"/><stop offset="1" stop-color="#e44b00"/></linearGradient></defs><ellipse cx="200" cy="372" rx="100" ry="12" fill="#000" opacity=".08"/>
+    <path d="M110 40h180l-6 20 10 280-6 22H112l-6-22 10-280z" fill="url(#p1)"/>
+    <path d="M110 40h180v20H110zM106 340h188v22H106z" fill="#c4161c"/>
+    <g stroke="#fff" stroke-width="2" opacity=".5"><path d="M118 40v20M130 40v20M142 40v20M154 40v20M166 40v20M178 40v20M190 40v20M202 40v20M214 40v20M226 40v20M238 40v20M250 40v20M262 40v20M274 40v20M286 40v20"/></g>
+    <ellipse cx="200" cy="140" rx="70" ry="40" fill="#fff" transform="rotate(-12 200 140)"/>
+    <text x="200" y="152" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="34" fill="#e2231a" transform="rotate(-12 200 140)">CRISPS</text>
+    <text x="200" y="210" text-anchor="middle" font-family="Arial" font-weight="700" font-size="22" fill="#fff6c2">paprika · hot</text>
+    <g fill="#e35d1c" stroke="#a8360c" stroke-width="3">
+      <path d="M140 250c20-15 50-5 55 15s-25 40-45 30-25-30-10-45z"/><path d="M220 260c25-10 50 5 50 25s-30 35-50 25-20-40 0-50z"/><path d="M175 300c18-8 40 0 40 18s-25 30-40 22-18-32 0-40z"/>
+    </g>
+    <path d="M130 70l-8 260" stroke="#fff" stroke-width="10" opacity=".15" stroke-linecap="round"/></svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none"><defs><linearGradient id="o1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffe76a"/><stop offset="0.5" stop-color="#f6c919"/><stop offset="1" stop-color="#d99a00"/></linearGradient></defs><ellipse cx="200" cy="376" rx="95" ry="12" fill="#000" opacity=".08"/>
+    <rect x="178" y="26" width="44" height="30" rx="6" fill="#e0b021"/>
+    <path d="M182 56h36l10 40c40 20 62 60 62 110v130c0 16-12 28-28 28H138c-16 0-28-12-28-28V206c0-50 22-90 62-110z" fill="url(#o1)"/>
+    <path d="M262 150c30 10 40 50 20 80" stroke="#e0b021" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <rect x="128" y="200" width="144" height="110" rx="10" fill="#fff" opacity=".92"/>
+    <circle cx="200" cy="244" r="26" fill="#ffcc00"/><circle cx="200" cy="244" r="12" fill="#6b3d12"/>
+    <g fill="#ffcc00"><ellipse cx="200" cy="208" rx="6" ry="12" transform="rotate(0 200 244)"/><ellipse cx="200" cy="208" rx="6" ry="12" transform="rotate(36 200 244)"/><ellipse cx="200" cy="208" rx="6" ry="12" transform="rotate(72 200 244)"/><ellipse cx="200" cy="208" rx="6" ry="12" transform="rotate(108 200 244)"/><ellipse cx="200" cy="208" rx="6" ry="12" transform="rotate(144 200 244)"/><ellipse cx="200" cy="208" rx="6" ry="12" transform="rotate(180 200 244)"/><ellipse cx="200" cy="208" rx="6" ry="12" transform="rotate(216 200 244)"/><ellipse cx="200" cy="208" rx="6" ry="12" transform="rotate(252 200 244)"/><ellipse cx="200" cy="208" rx="6" ry="12" transform="rotate(288 200 244)"/><ellipse cx="200" cy="208" rx="6" ry="12" transform="rotate(324 200 244)"/></g>
+    <text x="200" y="296" text-anchor="middle" font-family="Arial" font-weight="700" font-size="18" fill="#3b7a2a">SUNFLOWER</text>
+    <path d="M130 120c-10 40-12 150-6 200" stroke="#fff" stroke-width="10" opacity=".35" stroke-linecap="round"/></svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none"><defs><linearGradient id="q1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0303c"/><stop offset="1" stop-color="#a90d17"/></linearGradient></defs><ellipse cx="200" cy="372" rx="100" ry="12" fill="#000" opacity=".08"/>
+    <path d="M110 40h180l-6 20 10 280-6 22H112l-6-22 10-280z" fill="url(#q1)"/>
+    <path d="M110 40h180v20H110zM106 340h188v22H106z" fill="#ffd21f"/>
+    <circle cx="200" cy="130" r="52" fill="#ffd21f"/><circle cx="200" cy="130" r="44" fill="#fff"/>
+    <text x="200" y="140" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="26" fill="#d1121b">WAVY</text>
+    <text x="200" y="215" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-weight="700" font-size="26" fill="#fff">Original</text>
+    <text x="200" y="245" text-anchor="middle" font-family="Arial" font-weight="700" font-size="16" fill="#ffe7a3">FAMILY SIZE</text>
+    <g fill="#f7d17a" stroke="#c99329" stroke-width="3"><path d="M145 270c25-12 55 0 55 20s-30 35-55 25-25-35 0-45z"/><path d="M210 285c22-12 55-2 58 18s-25 35-50 28-30-36-8-46z"/></g>
+    <path d="M130 70l-8 260" stroke="#fff" stroke-width="10" opacity=".15" stroke-linecap="round"/></svg>

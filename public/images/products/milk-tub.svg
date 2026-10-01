@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e9efe4"/></linearGradient></defs><ellipse cx="200" cy="372" rx="120" ry="12" fill="#000" opacity=".08"/>
+    <ellipse cx="200" cy="80" rx="120" ry="28" fill="#f3f3f3"/><path d="M80 80h240v20c0 15-54 28-120 28S80 115 80 100z" fill="#e1e1e1"/>
+    <path d="M90 110h220l-20 240c0 12-40 20-90 20s-90-8-90-20z" fill="url(#g1)"/>
+    <path d="M94 160h212l-6 70H100z" fill="#2f8f3a"/>
+    <text x="200" y="208" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="34" fill="#fff">GRASS</text>
+    <path d="M104 290c40-30 70 10 96-10s60-20 96 10l-4 40c-40 20-150 20-184 0z" fill="#7cc04b"/>
+    <text x="200" y="262" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#2f8f3a">vanilla · organic</text></svg>

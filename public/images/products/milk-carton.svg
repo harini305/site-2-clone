@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none"><defs><linearGradient id="mc1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7a3e22"/><stop offset="1" stop-color="#4a2414"/></linearGradient></defs><ellipse cx="200" cy="372" rx="90" ry="10" fill="#000" opacity=".08"/>
+    <path d="M140 80l20-40h80l20 40z" fill="#5a2c18"/><rect x="215" y="30" width="26" height="22" rx="4" fill="#f5f5f5"/>
+    <rect x="130" y="80" width="140" height="285" rx="6" fill="url(#mc1)"/>
+    <text x="200" y="130" text-anchor="middle" font-family="Arial Black,Arial" font-size="24" fill="#fff">BARISTA</text>
+    <text x="200" y="158" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="20" fill="#7cc8ef">milk</text>
+    <circle cx="200" cy="270" r="62" fill="#7cc8ef"/><circle cx="200" cy="270" r="48" fill="#fff"/>
+    <circle cx="183" cy="262" r="6" fill="#4a2414"/><circle cx="217" cy="262" r="6" fill="#4a2414"/><path d="M182 286c10 10 26 10 36 0" stroke="#d61f3a" stroke-width="5" stroke-linecap="round"/></svg>

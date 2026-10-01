@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none"><defs><linearGradient id="y1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2e9b49"/><stop offset="1" stop-color="#16602a"/></linearGradient><linearGradient id="y2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e2231a"/><stop offset="1" stop-color="#a80f15"/></linearGradient></defs><ellipse cx="200" cy="360" rx="160" ry="14" fill="#000" opacity=".08"/>
+    <path d="M60 150l140-50 140 50v150l-140 50-140-50z" fill="#1d7a34"/>
+    <path d="M60 150l140 50v150L60 300z" fill="url(#y1)"/>
+    <path d="M200 200l140-50v150l-140 50z" fill="url(#y2)"/>
+    <path d="M60 150l140-50 140 50-140 50z" fill="#eaf6ea"/>
+    <path d="M200 100v100M130 125l140 50M270 125l-140 50" stroke="#c9dcc9" stroke-width="3"/>
+    <text x="270" y="262" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="24" fill="#fff" transform="rotate(-18 270 262)">YOGURT</text>
+    <g fill="#e2231a"><circle cx="110" cy="250" r="20"/><circle cx="145" cy="270" r="16"/></g>
+    <g fill="#5fb446"><path d="M100 230l10 10 10-10M137 255l8 8 8-8"/></g></svg>
