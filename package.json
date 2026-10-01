@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "assets:illustrations": "node scripts/generate-illustrations.mjs"
+    "lint": "eslint"
   },
   "dependencies": {
     "gsap": "^3.15.0",

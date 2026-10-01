@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none"><defs><linearGradient id="cb1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6a2fb6"/><stop offset="1" stop-color="#3a1477"/></linearGradient></defs><ellipse cx="200" cy="320" rx="170" ry="14" fill="#000" opacity=".08"/>
-    <path d="M40 140l300-30 30 120-300 40z" fill="url(#cb1)"/>
-    <path d="M40 140l300-30 6 22-300 32z" fill="#3e1f6e"/>
-    <path d="M70 280l-30-140 30 0 30 130z" fill="#b0b0b0" opacity=".6"/>
-    <text x="200" y="205" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-weight="700" font-size="42" fill="#fff" transform="rotate(-6 200 205)">Milk Choc</text>
-    <rect x="130" y="222" width="110" height="26" rx="4" fill="#f2c200" transform="rotate(-6 185 235)"/>
-    <text x="185" y="241" text-anchor="middle" font-family="Arial Black,Arial" font-size="16" fill="#5a2a0a" transform="rotate(-6 185 235)">WHOLE NUT</text>
-    <ellipse cx="285" cy="215" rx="26" ry="18" fill="#c98a4b"/><ellipse cx="290" cy="208" rx="10" ry="6" fill="#e9b47a"/></svg>

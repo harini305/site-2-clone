@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none"><defs><linearGradient id="k1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5a3020"/><stop offset="1" stop-color="#2a140c"/></linearGradient><linearGradient id="k2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6b3a26"/><stop offset="1" stop-color="#3b2016"/></linearGradient></defs><ellipse cx="200" cy="340" rx="150" ry="16" fill="#000" opacity=".08"/>
-    <path d="M60 170l170-60 120 50v120l-120 60-170-60z" fill="#3a2016"/>
-    <path d="M60 170l170 60v110L60 280z" fill="url(#k1)"/>
-    <path d="M230 230l120-70v120l-120 60z" fill="#4a281b"/>
-    <path d="M60 222l170 60 120-68" stroke="#fff3df" stroke-width="12"/>
-    <path d="M60 170l170-60 120 50-120 70z" fill="url(#k2)"/>
-    <g fill="#fff3df"><circle cx="150" cy="160" r="5"/><circle cx="200" cy="150" r="4"/><circle cx="250" cy="165" r="5"/><circle cx="180" cy="185" r="4"/><circle cx="280" cy="160" r="4"/><circle cx="120" cy="175" r="4"/><circle cx="230" cy="190" r="4"/></g>
-    <path d="M100 150c20 10 30-5 50 5s30 0 50 10 40-5 60 5" stroke="#26140d" stroke-width="8" stroke-linecap="round"/></svg>

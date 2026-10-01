@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none"><ellipse cx="200" cy="372" rx="120" ry="14" fill="#000" opacity=".08"/>
-    <g fill="#fff6dc" stroke="#e8c675" stroke-width="2">
-    <circle cx="110" cy="70" r="18"/><circle cx="147" cy="93" r="21"/><circle cx="184" cy="116" r="24"/><circle cx="221" cy="139" r="27"/><circle cx="258" cy="92" r="18"/><circle cx="115" cy="115" r="21"/><circle cx="152" cy="138" r="24"/><circle cx="189" cy="91" r="27"/><circle cx="226" cy="114" r="18"/><circle cx="263" cy="137" r="21"/><circle cx="120" cy="90" r="24"/><circle cx="157" cy="113" r="27"/><circle cx="194" cy="136" r="18"/><circle cx="231" cy="89" r="21"/><circle cx="268" cy="112" r="24"/><circle cx="125" cy="135" r="27"/><circle cx="162" cy="88" r="18"/><circle cx="199" cy="111" r="21"/><circle cx="236" cy="134" r="24"/><circle cx="273" cy="87" r="27"/><circle cx="130" cy="110" r="18"/><circle cx="167" cy="133" r="21"/><circle cx="204" cy="86" r="24"/><circle cx="241" cy="109" r="27"/><circle cx="278" cy="132" r="18"/><circle cx="135" cy="85" r="21"/>
-    </g>
-    <path d="M100 140h200l-26 220H126z" fill="#fff"/>
-    <path d="M110 140h20l-3 220h-18z" fill="#e2231a"/><path d="M150 140h20l-1.5 220h-18z" fill="#e2231a"/><path d="M190 140h20l-0 220h-18z" fill="#e2231a"/><path d="M230 140h20l--1.5 220h-18z" fill="#e2231a"/><path d="M270 140h20l--3 220h-18z" fill="#e2231a"/>
-    <rect x="128" y="220" width="144" height="56" rx="8" fill="#ffd21f" stroke="#c4161c" stroke-width="4"/>
-    <text x="200" y="258" text-anchor="middle" font-family="Arial Black,Arial" font-size="28" fill="#c4161c">POPCORN</text></svg>

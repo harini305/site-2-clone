@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none"><defs><linearGradient id="bc1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1d6fd1"/><stop offset="0.5" stop-color="#3a8ff0"/><stop offset="1" stop-color="#0f3f8a"/></linearGradient></defs><ellipse cx="200" cy="376" rx="80" ry="10" fill="#000" opacity=".08"/>
-    <ellipse cx="200" cy="50" rx="70" ry="16" fill="#cfd4da"/>
-    <path d="M130 50h140v300c0 10-30 22-70 22s-70-12-70-22z" fill="url(#bc1)"/>
-    <path d="M130 70h140v20H130z" fill="#cfd4da"/>
-    <circle cx="200" cy="200" r="58" fill="#fff"/><path d="M150 200c30-40 70 40 100 0" stroke="#24a148" stroke-width="16" stroke-linecap="round"/><path d="M150 220c30-40 70 40 100 0" stroke="#ffd21f" stroke-width="10" stroke-linecap="round"/>
-    <text x="200" y="300" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-weight="700" font-size="30" fill="#fff">Lemon</text>
-    <path d="M145 90v260" stroke="#fff" stroke-width="10" opacity=".25" stroke-linecap="round"/></svg>
