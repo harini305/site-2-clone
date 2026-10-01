@@ -30,47 +30,49 @@ export default function Header() {
 
   return (
     <>
-      <header className={`${styles.bar} ${scrolled ? styles.scrolled : ""}`}>
-        <div className={`container ${styles.inner}`}>
-          <Logo />
-          <div className={styles.search}>
-            <HeaderSearch />
+      <div className={styles.slot}>
+        <header className={`${styles.bar} ${scrolled ? styles.scrolled : ""}`}>
+          <div className={`container ${styles.inner}`}>
+            <Logo />
+            <div className={styles.search}>
+              <HeaderSearch />
+            </div>
+            <nav aria-label="Utility" className={styles.utility}>
+              <ul>
+                {utilityLinks.map((l) => (
+                  <li key={l.label}>
+                    <Link href={l.href} className={isActive(l.href) ? styles.current : undefined}>
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className={styles.actions}>
+              <button
+                type="button"
+                className={styles.burger}
+                onClick={() => setMenuOpen(true)}
+                aria-label="Open menu"
+                aria-expanded={menuOpen}
+                aria-controls="mobile-menu"
+              >
+                <PiList aria-hidden="true" />
+              </button>
+              <Link href="/my-account" className={styles.signin}>
+                <PiUser aria-hidden="true" />
+                <span className={styles.signinText}>Sign In / Register</span>
+                <span className="visually-hidden">Account</span>
+              </Link>
+              <Link href="/wishlist" className={styles.icon} aria-label={`Wishlist, ${wishlist.length} items`}>
+                <PiHeart aria-hidden="true" />
+                {wishlist.length > 0 ? <span className={styles.dot} aria-hidden="true" /> : null}
+              </Link>
+              <MiniCart />
+            </div>
           </div>
-          <nav aria-label="Utility" className={styles.utility}>
-            <ul>
-              {utilityLinks.map((l) => (
-                <li key={l.label}>
-                  <Link href={l.href} className={isActive(l.href) ? styles.current : undefined}>
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <div className={styles.actions}>
-            <button
-              type="button"
-              className={styles.burger}
-              onClick={() => setMenuOpen(true)}
-              aria-label="Open menu"
-              aria-expanded={menuOpen}
-              aria-controls="mobile-menu"
-            >
-              <PiList aria-hidden="true" />
-            </button>
-            <Link href="/my-account" className={styles.signin}>
-              <PiUser aria-hidden="true" />
-              <span className={styles.signinText}>Sign In / Register</span>
-              <span className="visually-hidden">Account</span>
-            </Link>
-            <Link href="/wishlist" className={styles.icon} aria-label={`Wishlist, ${wishlist.length} items`}>
-              <PiHeart aria-hidden="true" />
-              {wishlist.length > 0 ? <span className={styles.dot} aria-hidden="true" /> : null}
-            </Link>
-            <MiniCart />
-          </div>
-        </div>
-      </header>
+        </header>
+      </div>
       <CategoryNav />
       <MobileMenu open={menuOpen} onClose={() => setMenuOpen(false)} />
     </>

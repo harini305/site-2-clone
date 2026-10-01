@@ -23,6 +23,23 @@ const offsets = {
 export default function RevealController() {
   const pathname = usePathname();
 
+  // Pause hover effects inside <main> while scrolling (see .is-scrolling in globals.css).
+  useEffect(() => {
+    const root = document.documentElement;
+    let timer;
+    const onScroll = () => {
+      if (!root.classList.contains("is-scrolling")) root.classList.add("is-scrolling");
+      clearTimeout(timer);
+      timer = setTimeout(() => root.classList.remove("is-scrolling"), 150);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("scroll", onScroll);
+      root.classList.remove("is-scrolling");
+    };
+  }, []);
+
   useEffect(() => {
     window.__revealReady = true;
     const root = document.documentElement;

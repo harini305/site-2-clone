@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "./HoverPrefetchLink";
 import { getCategory } from "@/lib/data/categories";
 import Price from "./Price";
 import WishlistButton from "./WishlistButton";
@@ -22,6 +22,7 @@ export default function ProductCard({ product, variant = "home", headingLevel = 
           alt=""
           width={400}
           height={400}
+          sizes="(max-width: 560px) 80vw, (max-width: 1024px) 40vw, 300px"
           className={styles.img}
         />
       </Link>

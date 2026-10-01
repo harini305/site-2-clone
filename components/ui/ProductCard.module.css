@@ -7,13 +7,31 @@
   border-radius: var(--radius);
   background: #fff;
   padding: 0 5px 9px;
-  transition: box-shadow 0.35s ease, border-color 0.35s ease, transform 0.35s ease;
+  isolation: isolate;
+  transition: border-color 0.35s ease, transform 0.35s ease;
 }
 
-.card:hover {
-  border-color: transparent;
+/* The hover shadow is painted once on this layer and only faded in/out, which the
+   compositor handles cheaply (animating box-shadow itself repaints every frame). */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
   box-shadow: 0 18px 40px rgba(16, 24, 40, 0.12);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+:global(html:not(.is-scrolling)) .card:hover {
+  border-color: transparent;
   transform: translateY(-4px);
+}
+
+:global(html:not(.is-scrolling)) .card:hover::after {
+  opacity: 1;
 }
 
 .badge {
@@ -56,7 +74,7 @@
   transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
-.card:hover .img {
+:global(html:not(.is-scrolling)) .card:hover .img {
   transform: scale(1.08);
 }
 

@@ -19,7 +19,7 @@
   transition: transform 1s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
-.banner:hover .img {
+:global(html:not(.is-scrolling)) .banner:hover .img {
   transform: scale(1.06);
 }
 
@@ -56,7 +56,7 @@
   clip-path: ellipse(100% 100% at 100% 0);
 }
 
-.banner:hover .label {
+:global(html:not(.is-scrolling)) .banner:hover .label {
   width: 40%;
 }
 
@@ -83,7 +83,7 @@
     width: 46%;
   }
 
-  .banner:hover .label {
+  :global(html:not(.is-scrolling)) .banner:hover .label {
     width: 48%;
   }
 }

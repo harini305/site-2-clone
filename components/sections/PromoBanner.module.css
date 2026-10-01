@@ -61,6 +61,14 @@
   min-width: 0;
 }
 
+.parallax {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  /* Own compositor layer: scrolling only moves the layer, the shadowed image is not repainted. */
+  will-change: transform;
+}
+
 .img {
   width: 100%;
   height: auto;
@@ -70,7 +78,7 @@
   transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
-.card:hover .img {
+:global(html:not(.is-scrolling)) .card:hover .img {
   transform: scale(1.04);
 }
 

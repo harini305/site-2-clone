@@ -8,15 +8,18 @@ export default function PromoBanner({ banner, theme, layout = "image-left", prio
   return (
     <article className={`${styles.card} ${styles[theme]} ${styles[layout]}`} data-reveal="up">
       <div className={styles.media}>
-        <Image
-          src={banner.image}
-          alt={banner.alt}
-          width={600}
-          height={420}
-          className={styles.img}
-          preload={priority}
-          data-parallax="14"
-        />
+        {/* GSAP moves this wrapper; the image's own transform is reserved for the hover zoom. */}
+        <div className={styles.parallax} data-parallax="14">
+          <Image
+            src={banner.image}
+            alt={banner.alt}
+            width={600}
+            height={420}
+            sizes="(max-width: 767px) 90vw, (max-width: 1180px) 55vw, 430px"
+            className={styles.img}
+            preload={priority}
+          />
+        </div>
       </div>
       <div className={styles.copy}>
         <p className={styles.badge}>{banner.badge}</p>

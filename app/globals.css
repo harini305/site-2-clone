@@ -142,6 +142,11 @@ main {
   overflow-x: clip;
 }
 
+/* While the page is scrolling, <html> gets .is-scrolling (see RevealController).
+   Card and banner hover effects are written as html:not(.is-scrolling) ...:hover so
+   items passing under a resting cursor don't each start a hover animation.
+   Pointer events are untouched, so clicks always work. */
+
 .page-section {
   padding-block: 90px;
 }
