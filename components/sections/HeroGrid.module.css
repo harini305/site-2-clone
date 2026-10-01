@@ -20,6 +20,11 @@
   margin-top: -2px;
 }
 
+/* Let the popcorn banner fill the rest of the column so it lines up with the left column. */
+.right > :last-child {
+  flex: 1 1 auto;
+}
+
 .offers {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -34,14 +39,7 @@
   }
 
   .left {
-    grid-template-columns: 1fr 1fr;
     gap: 30px;
-  }
-}
-
-@media (max-width: 900px) {
-  .left {
-    grid-template-columns: 1fr;
   }
 }
 

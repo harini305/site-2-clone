@@ -29,7 +29,7 @@ brand name or logo.
 Attribution appears on the site at **`/image-credits`**, which is linked from the footer on every page.
 Its data lives in `lib/data/imageCredits.js`. If you replace or add a photo, update that file too.
 
-## Inventory (32 image files)
+## Openly licensed inventory (31 image files)
 
 | File | Replaced (previous illustration) | Source | Author | Licence | Changes |
 | --- | --- | --- | --- | --- | --- |
@@ -42,7 +42,7 @@ Its data lives in `lib/data/imageCredits.js`. If you replace or add a photo, upd
 | `images/products/potato-crisps.webp` | chips-bag-red.svg | [Potato-Chips.jpg](https://commons.wikimedia.org/wiki/File:Potato-Chips.jpg) | Evan-Amos | Public domain | cropped, resized |
 | `images/products/chocolate-cake.webp` | cake.svg | [Piece of chocolate cake on a white plate decorated with chocolate sauce.jpg](https://commons.wikimedia.org/wiki/File:Piece_of_chocolate_cake_on_a_white_plate_decorated_with_chocolate_sauce.jpg) | Daria Yakovleva | CC0 | background removed, trimmed, resized |
 | `images/products/chocolate-donut.webp` | donut.svg | [Fat-Doughnut-Brooklyn-Chocolate-Frosted.jpg](https://commons.wikimedia.org/wiki/File:Fat-Doughnut-Brooklyn-Chocolate-Frosted.jpg) | Evan-Amos | Public domain | background removed, trimmed, resized |
-| `images/products/olive-oil.webp` | oil-bottle.svg + oils-still-life.svg (hero) | [Bottle of olive oil.jpg](https://commons.wikimedia.org/wiki/File:Bottle_of_olive_oil.jpg) | margenauer from Pixabay | CC0 | background removed, trimmed, resized |
+| `images/products/olive-oil.webp` | oil-bottle.svg | [Bottle of olive oil.jpg](https://commons.wikimedia.org/wiki/File:Bottle_of_olive_oil.jpg) | margenauer from Pixabay | CC0 | background removed, trimmed, resized |
 | `images/products/pint-beer.webp` | beer-bottle.svg | [Pint of beer with some bread.jpg](https://commons.wikimedia.org/wiki/File:Pint_of_beer_with_some_bread.jpg) | Jon Sullivan | Public domain | background removed, trimmed, resized |
 | `images/products/yeast-spread-toast.webp` | spread-jar.svg | [Vegemite and jelly.jpg](https://commons.wikimedia.org/wiki/File:Vegemite_and_jelly.jpg) | Hughessd01 | CC BY-SA 4.0 | background removed, trimmed, resized |
 | `images/products/yogurt-bowl.webp` | milk-tub.svg | [Yoghurt in bowl 011715.jpg](https://commons.wikimedia.org/wiki/File:Yoghurt_in_bowl_011715.jpg) | Susan Slater | CC BY-SA 4.0 | background removed, trimmed, resized |
@@ -55,18 +55,34 @@ Its data lives in `lib/data/imageCredits.js`. If you replace or add a photo, upd
 | `images/products/chocolate-pieces.webp` | — (new gallery image) | [Chocolate(bgFFF).jpg](https://commons.wikimedia.org/wiki/File:Chocolate(bgFFF).jpg) | User:Aka | CC BY-SA 3.0 | background removed, trimmed, resized |
 | `images/products/milk-bottle.webp` | milk-carton.svg | [Milk bottle and two doughnuts.jpg](https://commons.wikimedia.org/wiki/File:Milk_bottle_and_two_doughnuts.jpg) | www.Pixel.la Free Stock Photos | CC0 | background removed, trimmed, resized |
 | `images/products/black-tea.webp` | tea-box.svg | [Ceylon black tea leaves.jpg](https://commons.wikimedia.org/wiki/File:Ceylon_black_tea_leaves.jpg) | Patrick Kolencherry | CC BY-SA 3.0 | background removed, trimmed, resized |
-| `images/products/popcorn.webp` | popcorn.svg (product + hero) | [Popcorn in a bowl.jpg](https://commons.wikimedia.org/wiki/File:Popcorn_in_a_bowl.jpg) | Ziongarage | CC0 | background removed, trimmed, resized |
+| `images/products/popcorn.webp` | popcorn.svg | [Popcorn in a bowl.jpg](https://commons.wikimedia.org/wiki/File:Popcorn_in_a_bowl.jpg) | Ziongarage | CC0 | background removed, trimmed, resized |
 | `images/products/eggs-carton.webp` | eggs.svg | [6-Pack-Chicken-Eggs.jpg](https://commons.wikimedia.org/wiki/File:6-Pack-Chicken-Eggs.jpg) | Evan-Amos | Public domain | background removed, trimmed, resized |
 | `images/products/beer-mug.webp` | beer-can.svg | [Glass beer mug full.jpg](https://commons.wikimedia.org/wiki/File:Glass_beer_mug_full.jpg) | AxtImHause | CC BY 4.0 | background removed, trimmed, resized |
 | `images/products/bananas.webp` | banana.svg | [Banana bunch.jpeg](https://commons.wikimedia.org/wiki/File:Banana_bunch.jpeg) | NW Indian Language Institute | CC BY 3.0 | background removed, trimmed, resized |
 | `images/products/onions.webp` | onions.svg | [Red Onion from Bangladesh 02.jpg](https://commons.wikimedia.org/wiki/File:Red_Onion_from_Bangladesh_02.jpg) | Nahid.rajbd | CC BY-SA 4.0 | background removed, trimmed, resized |
-| `images/banners/breads.webp` | organic-still-life.svg (hero) | [Breads of Moskovskaya Oblast. img 006.jpg](https://commons.wikimedia.org/wiki/File:Breads_of_Moskovskaya_Oblast._img_006.jpg) | Dmitry Makeev | CC BY-SA 4.0 | background removed, trimmed, resized |
 | `images/banners/sunflower-seeds.webp` | seed-packs.svg (Sunflower tile) | [Sunflower seeds. img 007.jpg](https://commons.wikimedia.org/wiki/File:Sunflower_seeds._img_007.jpg) | Dmitry Makeev | CC BY-SA 4.0 | background removed, trimmed, resized |
 | `images/banners/coffee-beans.webp` | second coffee-jar.svg (Coffee tile) | [Dark roasted coffee on white background.jpg](https://commons.wikimedia.org/wiki/File:Dark_roasted_coffee_on_white_background.jpg) | Jon Sullivan | Public domain | background removed, trimmed, resized |
 | `images/banners/pexels-3962285.jpg` | — (unchanged; "Most Popular" banner) | [Pexels photo 3962285](https://www.pexels.com/photo/3962285/) | Anna Shvets | Pexels License | resized |
 | `images/banners/pexels-3167310.jpg` | — (unchanged; "Special Offers" banner) | [Pexels photo 3167310](https://www.pexels.com/photo/3167310/) | René Asmussen | Pexels License | resized |
 
 All 27 illustrated SVGs and their generator script have been removed. They remain in git history.
+
+## Supplied by the site owner (3 image files)
+
+The three homepage hero banners use images the site owner provided directly, on 2026-10-01. Their
+original source and licence were **not provided and have not been verified**, so they are not listed on
+`/image-credits`. Their backgrounds were removed so they sit on the banner gradients. They were then
+trimmed and saved as WebP.
+
+| File | Used in | Notes |
+| --- | --- | --- |
+| `images/banners/hero-oils.webp` | "Natural Oils" hero banner | Sunflower-oil still life (bottle, seed sack, gravy boat, sunflower) |
+| `images/banners/hero-organic.webp` | "Eat Organic" hero banner | Clay jug with wheat, mug, cup and sliced bread. **The mug shows a "BREWRY JARA" logo.** |
+| `images/banners/hero-popcorn.webp` | "Big Popcorn" banner | Popcorn bucket with spilled popcorn |
+
+Before public use, confirm you hold the rights to these images. If they were adapted from the reference
+demo's own banner artwork, the demo's licensing restrictions still apply. Also consider removing or
+blurring the logo on the mug.
 
 ## Other third-party resources
 
@@ -82,7 +98,9 @@ All 27 illustrated SVGs and their generator script have been removed. They remai
 1. **Brand name and logo.** "Cartly" and the cart-in-a-circle mark are placeholders (`lib/data/site.js`,
    `components/ui/Logo.js`).
 2. **Contact details.** The address, phone numbers (555 range) and `@cartly.example` emails are placeholders.
-3. **Product data and photos.** The prices, names, descriptions and photos are sample content. The photos are
+3. **Hero banner images** (`hero-*.webp`). Confirm your rights to them, and remove or blur the logo on the
+   mug (see "Supplied by the site owner" above).
+4. **Product data and photos.** The prices, names, descriptions and photos are sample content. The photos are
    licensed for use, but they show generic food rather than your actual products, so swap in your own
    product photography when you have it (keep the filenames, or update the `images` arrays in
    `lib/data/products.js` and `lib/data/imageCredits.js`).
