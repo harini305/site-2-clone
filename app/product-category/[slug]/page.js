@@ -13,7 +13,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const category = getCategory(slug);
-  if (!category) return {};
+  if (!category) return { title: "Page not found" };
   return {
     title: category.name,
     description: `Shop ${category.name.toLowerCase()} products at great prices.`,
