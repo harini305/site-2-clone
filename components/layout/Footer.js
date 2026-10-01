@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaCcAmex, FaCcMastercard, FaCcPaypal, FaCcVisa } from "react-icons/fa";
 import { site } from "@/lib/data/site";
 import Icon from "@/components/ui/Icon";
@@ -49,7 +50,10 @@ export default function Footer() {
               ))}
             </ul>
             <p className={styles.copy}>
-              © {year} {site.title}. All rights reserved.
+              © {year} {site.title}. All rights reserved.{" "}
+              <Link href="/image-credits" className={styles.credits}>
+                Image credits
+              </Link>
             </p>
           </div>
         </div>

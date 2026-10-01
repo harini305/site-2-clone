@@ -1,8 +1,8 @@
 # Cartly Grocery Shop
 
 A Next.js storefront that recreates the layout and interactions of the
-[Phlox "Shop Grocery 2" demo](https://demo.phlox.pro/shop-grocery-2/). It uses original artwork, original
-copy and a placeholder brand. See [ASSETS.md](ASSETS.md) for the asset inventory and licensing notes.
+[Phlox "Shop Grocery 2" demo](https://demo.phlox.pro/shop-grocery-2/). It uses openly licensed product
+photography, original copy and a placeholder brand. See [ASSETS.md](ASSETS.md) for every image's source and licence.
 
 Built with Next.js 16 (App Router, JavaScript), CSS Modules, GSAP + ScrollTrigger, Swiper and react-icons.
 
@@ -29,6 +29,7 @@ npm run build && npm start
 | `/my-account` | Login and register forms (demo) |
 | `/wishlist` | Saved products |
 | `/contact` | Help Center: map, contact details and contact form (demo) |
+| `/image-credits` | Photo sources, authors and licences. Required by the CC BY / CC BY-SA images and linked in the footer. |
 | any other URL | Custom 404 page |
 
 Header links follow the reference: "Our Stores" goes to `/products`, "Help Center" to `/contact` and
@@ -52,11 +53,10 @@ components/
   ui/                 Button, Logo, SectionHeading, ProductCard, Price, Rating, QuantityInput,
                       WishlistButton, AddToCartButton, Breadcrumbs, Icon
 lib/
-  data/               site settings, categories, products, homepage content
+  data/               site settings, categories, products, homepage content, image credits
   store.js            cart, wishlist and toasts (localStorage + useSyncExternalStore)
   shop.js             listing filters, sorting and pagination
-scripts/
-  generate-illustrations.mjs   regenerates the SVG artwork in public/images
+public/images/        product photos (products/) and banner photos/cut-outs (banners/)
 ```
 
 ## Demo-only functionality
@@ -73,7 +73,7 @@ Each of these is labelled as demo-only in the UI.
 ## Animations
 
 - Scroll reveals (fade-up / left / right) via a single `RevealController` using `ScrollTrigger.batch`.
-- Parallax on hero banner artwork, an animated filter in the Grocery Products tabs, and an auto-playing
+- Parallax on hero banner images, an animated filter in the Grocery Products tabs, and an auto-playing
   Swiper carousel.
 - Hover effects on cards, banners, buttons and icons, plus a header that compacts when you scroll.
 - `prefers-reduced-motion` turns the scroll animations off. Content is only hidden while the animation

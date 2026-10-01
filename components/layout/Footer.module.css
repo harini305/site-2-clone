@@ -153,6 +153,15 @@
   color: #444;
 }
 
+.credits {
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.credits:hover {
+  color: var(--red);
+}
+
 @media (max-width: 1024px) {
   .subscribe {
     padding: 110px 0 100px;
