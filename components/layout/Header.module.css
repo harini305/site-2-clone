@@ -55,6 +55,7 @@
 .actions {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   gap: 22px;
 }
 
@@ -149,7 +150,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   .bar {
     position: relative;
   }
@@ -169,7 +170,9 @@
     order: 3;
     flex: 1 1 100%;
   }
+}
 
+@media (max-width: 767px) {
   .actions {
     gap: 12px;
   }

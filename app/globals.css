@@ -138,6 +138,10 @@ ol {
   top: 16px;
 }
 
+main {
+  overflow-x: clip;
+}
+
 .page-section {
   padding-block: 90px;
 }

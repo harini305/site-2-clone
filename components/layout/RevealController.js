@@ -8,10 +8,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const offsets = {
-  up: { y: 40 },
-  down: { y: -40 },
-  left: { x: -50 },
-  right: { x: 50 },
+  up: { y: 24 },
+  down: { y: -24 },
+  left: { x: -40 },
+  right: { x: 40 },
   zoom: { scale: 0.92 },
   fade: {},
 };
@@ -48,7 +48,7 @@ export default function RevealController() {
             x: 0,
             y: 0,
             scale: 1,
-            duration: 0.9,
+            duration: 0.7,
             ease: "power3.out",
             stagger: 0.09,
             overwrite: true,

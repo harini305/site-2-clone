@@ -164,17 +164,27 @@
   }
 
   .select {
+    padding: 0 26px 0 14px;
     font-size: 14px;
+  }
+
+  .caret {
+    right: 10px;
   }
 }
 
 @media (max-width: 380px) {
+  .input {
+    padding-left: 18px;
+    font-size: 16px;
+  }
+
   .selectWrap {
-    flex-basis: 118px;
+    flex-basis: 132px;
   }
 
   .select {
-    padding-left: 12px;
+    padding: 0 24px 0 12px;
     font-size: 13px;
   }
 }

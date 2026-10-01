@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { groceryTabs } from "@/lib/data/home";
 import ProductCard from "@/components/ui/ProductCard";
@@ -15,20 +15,24 @@ export default function GroceryProducts({ products }) {
 
   const visible = tab === "all" ? products : products.filter((p) => p.categories.includes(tab));
 
+  const animateNext = useRef(false);
+
+  // Animate the newly filtered cards once React has committed them.
+  useEffect(() => {
+    if (!animateNext.current || !gridRef.current) return;
+    animateNext.current = false;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    gsap.fromTo(
+      gridRef.current.children,
+      { opacity: 0, y: 24, scale: 0.96 },
+      { opacity: 1, y: 0, scale: 1, duration: 0.5, stagger: 0.05, ease: "power2.out", clearProps: "transform" }
+    );
+  }, [tab]);
+
   const select = (slug) => {
     if (slug === tab) return;
+    animateNext.current = true;
     setTab(slug);
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (!reduce && gridRef.current) {
-      // Animate the incoming cards after React commits the new list.
-      requestAnimationFrame(() => {
-        gsap.fromTo(
-          gridRef.current.children,
-          { opacity: 0, y: 24, scale: 0.96 },
-          { opacity: 1, y: 0, scale: 1, duration: 0.5, stagger: 0.05, ease: "power2.out", clearProps: "all" }
-        );
-      });
-    }
   };
 
   const onKeyDown = (e, index) => {
